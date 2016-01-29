@@ -241,5 +241,5 @@ if (!file.exists(tidyDataDirPath))
 {
 	dir.create(tidyDataDirPath)
 }
-write.table(tidyData, tidyDataFile)
+write.table(tidyData, tidyDataFile, row.name = FALSE)
 write.table(as.data.frame(activityNames), tidyActivityFile)
